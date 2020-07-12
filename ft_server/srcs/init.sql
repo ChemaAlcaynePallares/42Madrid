@@ -1,0 +1,3 @@
+CREATE DATABASE wordpress;
+GRANT ALL PRIVILEGES ON wordpress.* TO chema @'localhost' IDENTIFIED BY '111111';
+FLUSH PRIVILEGES;
