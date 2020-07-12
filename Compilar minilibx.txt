@@ -1,0 +1,22 @@
+Enlaces importatantes:
+https://github.com/qst0/ft_libgfx/tree/master/minilibx_X11_sources ---- Para compilar e instalar la minilibx
+
+En una maquina linux Instalar:
+
+Instalar con apt-get install libx11-dev
+
+libxtst-dev --- este no se si hace falta
+
+descargarse la carpeta del enlace y seguir lo que dice le readme
+
+entrar en la carpeta  hacer make
+
+se crea el minilibx.a
+
+poner el archivo libmlx.a en  /usr/local/lib
+poner el archivo mlx.h en  /usr/local/include
+poner la carpeta man/man3/mlx*.1 en /usr/local/man/man3
+
+en el make file cambiar los flags para referenciar las librerias a:  -lm -lmlx -lXext -lX11 -L ./libft -lft -lpthread
+
+
